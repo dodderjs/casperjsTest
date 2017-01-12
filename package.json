@@ -1,0 +1,23 @@
+{
+  "name": "capertest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "PHANTOMJS_EXECUTABLE=./node_modules/.bin/phantomjs ./node_modules/casperjs/bin/casperjs index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodderjs/casperjsTest.git"
+  },
+  "author": "dodderjs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dodderjs/casperjsTest/issues"
+  },
+  "homepage": "https://github.com/dodderjs/casperjsTest#readme",
+  "dependencies": {
+    "casperjs": "^1.1.3",
+    "phantomjs": "^2.1.7"
+  }
+}
