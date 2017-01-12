@@ -1,12 +1,14 @@
 var casper = require('casper').create();
-casper.start('http://casperjs.org/');
+
+casper.start('http://google.com?q=hydra');
 
 casper.then(function() {
-    this.echo('First Page: ' + this.getTitle());
+    this.echo('Hail hydra! We are on ' + this.getTitle());    
 });
 
-casper.thenOpen('http://phantomjs.org', function() {
-    this.echo('Second Page: ' + this.getTitle());
+casper.then(function() {
+	this.echo('Hail hydra! Cheeese!');
+    this.captureSelector('hydra.png', 'html');
 });
 
 casper.run();
